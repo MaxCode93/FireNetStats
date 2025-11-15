@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">FireNetStats</string>		
+	<string name="app_subtitle">Monitor de Red</string>
+    <string name="about_app">Acerca de</string>
+    
+    <!-- Main Activity -->
+    <string name="current_network">Red Actual</string>
+    <string name="download_speed">Velocidad de Descarga</string>
+    <string name="upload_speed">Velocidad de Carga</string>
+    <string name="network_type">Tipo de Red</string>
+    <string name="wifi_name">Nombre</string>
+    <string name="signal_strength">Intensidad de Señal</string>
+    <string name="data_usage">Uso de Datos</string>
+    <string name="enable_floating_widget">Activar Widget Flotante</string>
+    <string name="disable_floating_widget">Desactivar Widget Flotante</string>
+    
+    <!-- Widget Settings -->
+    <string name="widget_settings">Configuración del Widget</string>
+	<string name="widget_background_color">Color de fondo</string>
+	<string name="color_default">Predeterminado</string>
+	<string name="color_dark">Oscuro</string>
+	<string name="color_light">Claro</string>
+	<string name="color_transparent">Transparente</string>
+	<string name="color_custom">Personalizado</string>
+    <string name="widget_size">Tamaño</string>
+    <string name="small">Pequeño</string>
+    <string name="medium">Mediano</string>
+    <string name="large">Grande</string>
+    <string name="widget_transparency">Transparencia</string>
+    <string name="display_info">Información a Mostrar</string>
+    <string name="download_only">Descarga</string>
+    <string name="upload_only">Carga</string>
+    <string name="both">Ambas</string>
+    <string name="theme">Tema</string>
+    <string name="light">Claro</string>
+    <string name="dark">Oscuro</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+	<string name="reset_settings">Restablecer</string>
+	<string name="reset_confirmation">¿Estás seguro de que deseas restablecer todos los ajustes a sus valores predeterminados?</string>
+	<string name="yes">Sí</string>
+	<string name="no">No</string>
+	
+    <!-- Notifications -->
+    <string name="service_notification_title">FireNetStats Activo</string>
+    <string name="service_notification_text">Monitoreando estadísticas de red</string>
+    
+    <!-- Update System -->
+    <string name="check_for_updates">Buscar actualizaciones</string>
+    <string name="update_available">Nueva versión disponible</string>
+    <string name="update_available_title">📦 Nueva versión disponible: %1$s</string>
+    <string name="update_changelog">Cambios</string>
+    <string name="update_free_download">ℹ️  Descarga gratuita desde ApkLis</string>
+    <string name="update_download">Descargar</string>
+    <string name="update_cancel">Cancelar</string>
+    <string name="update_error">Error al verificar actualizaciones</string>
+    <string name="update_checking">Verificando actualizaciones...</string>
+    <string name="update_no_new">Tu aplicación está actualizada</string>
+    <string name="update_current_version">Versión actual: %1$s</string>
+    <string name="update_new_version">Versión disponible: %1$s</string>
+    
+    <!-- Errors and Messages -->
+    <string name="permission_required">Permiso Requerido</string>
+    <string name="overlay_permission_message">Esta aplicación necesita permiso para dibujar sobre otras apps</string>
+    <string name="go_to_settings">Ir a Configuración</string>
+    <string name="not_connected">No Conectado</string>
+</resources>

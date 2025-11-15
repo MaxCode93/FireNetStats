@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores primarios y secundarios (comunes a ambos temas) -->
+    <color name="primary_color">#FF5722</color>
+    <color name="primary_variant">#E64A19</color>
+    <color name="secondary_color">#2196F3</color>
+    <color name="secondary_variant">#1976D2</color>
+    
+    <!-- Colores para tema claro -->
+    <color name="background_color">#F5F5F5</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- Colores de texto para tema claro -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    
+    <!-- Colores de conexión (comunes a ambos temas) -->
+    <color name="good_connection">#4CAF50</color>
+    <color name="medium_connection">#FFC107</color>
+    <color name="poor_connection">#F44336</color>
+
+    <!-- Colores de utilidad para tema claro -->
+    <color name="divider_color">#1F000000</color>
+    <color name="widget_background">#CCFFFFFF</color>
+
+    <!-- Colores básicos (comunes a ambos temas) -->
+    <color name="white">#FFFFFFFF</color>
+	
+	<color name="header_gradient_start">#FAFAFA</color>
+	<color name="header_gradient_end">#F0F0F0</color>
+	<color name="button_gradient_start">#FFFFFF</color>
+	<color name="button_gradient_end">#F8F8F8</color>
+	<color name="button_border">#E0E0E0</color>
+	</resources>

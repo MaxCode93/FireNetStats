@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores para tema oscuro -->
+    <color name="background_color">#121212</color>
+    <color name="surface_color">#1E1E1E</color>
+    <color name="card_background">#2D2D2D</color>
+    
+    <!-- Colores de texto para tema oscuro -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    
+    <!-- Colores de utilidad para tema oscuro -->
+    <color name="divider_color">#33FFFFFF</color>
+    <color name="widget_background">#CC121212</color>
+    <color name="dialog_background">#CC121212</color>
+	
+	<!-- header -->
+	<color name="header_gradient_start">#1E1E1E</color>
+	<color name="header_gradient_end">#2D2D2D</color>
+	<color name="button_gradient_start">#2D2D2D</color>
+	<color name="button_gradient_end">#1E1E1E</color>
+	<color name="button_border">#404040</color>
+
+</resources>

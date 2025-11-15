@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Light) -->
+    <style name="Theme.FireNetStats" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/background_color</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+    
+    <!-- Dialog theme para la configuración del widget -->
+    <style name="Theme.FireNetStats.Dialog" parent="Theme.MaterialComponents.Light.Dialog.MinWidth">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/surface_color</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+        <item name="android:windowBackground">@drawable/settings_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:statusBarColor">@color/background_color</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="materialButtonStyle">@style/Widget.FireNetStats.Button</item>
+        <item name="radioButtonStyle">@style/Widget.FireNetStats.RadioButton</item>
+        <item name="seekBarStyle">@style/Widget.FireNetStats.SeekBar</item>
+    </style>
+
+    <!-- Animación para el diálogo -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Estilo para botones -->
+    <style name="Widget.FireNetStats.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Estilo para RadioButton -->
+    <style name="Widget.FireNetStats.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- Estilo para SeekBar -->
+    <style name="Widget.FireNetStats.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/divider_color</item>
+        <item name="android:progressTint">@color/primary_color</item>
+        <item name="android:thumbTint">@color/primary_color</item>
+    </style>
+</resources>

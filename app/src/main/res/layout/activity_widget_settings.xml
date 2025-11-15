@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/settings_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".WidgetSettingsActivity">
+
+        <TextView
+            android:id="@+id/tvSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/widget_settings"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/titleDivider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/divider_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSettingsTitle" />
+
+        <TextView
+            android:id="@+id/tvSizeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/widget_size"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_resize"
+            android:drawablePadding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleDivider" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/divider_color"
+            app:strokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSizeLabel">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/small"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/primary_color" />
+
+                <RadioButton
+                    android:id="@+id/rbMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medium"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/primary_color" />
+
+                <RadioButton
+                    android:id="@+id/rbLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/large"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/primary_color" />
+            </RadioGroup>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvTransparencyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/widget_transparency"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_opacity"
+            android:drawablePadding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardSize" />
+
+        <TextView
+            android:id="@+id/tvTransparencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            android:textColor="@color/primary_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTransparencyLabel"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTransparencyLabel" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTransparency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/divider_color"
+            app:strokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTransparencyLabel">
+
+            <SeekBar
+                android:id="@+id/sbTransparency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:max="100"
+                android:progress="20"
+                android:progressTint="@color/primary_color"
+                android:thumbTint="@color/primary_color" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvDisplayInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/display_info"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_info_display"
+            android:drawablePadding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTransparency" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDisplayInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/divider_color"
+            app:strokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDisplayInfoLabel">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbDownloadOnly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/download_only"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/primary_color" />
+
+                <RadioButton
+                    android:id="@+id/rbUploadOnly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/upload_only"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/primary_color" />
+
+                <RadioButton
+                    android:id="@+id/rbBoth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/both"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/primary_color" />
+            </RadioGroup>
+        </com.google.android.material.card.MaterialCardView>
+
+		<!-- Sección de color del widget -->
+		<TextView
+			android:id="@+id/tvWidgetColorLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="@string/widget_background_color"
+			android:textColor="@color/text_primary"
+			android:textSize="16sp"
+			android:drawableStart="@drawable/ic_theme"
+			android:drawablePadding="8dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/cardDisplayInfo" />
+
+		<com.google.android.material.card.MaterialCardView
+			android:id="@+id/cardWidgetColor"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			app:cardBackgroundColor="@color/card_background"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="0dp"
+			app:strokeColor="@color/divider_color"
+			app:strokeWidth="1dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/tvWidgetColorLabel">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="12dp">
+
+				<!-- Color actual -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Color actual:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewCurrentColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+
+					<TextView
+						android:id="@+id/btnChangeWidgetColor"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Cambiar"
+						android:textColor="@color/primary_color"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:layout_marginStart="8dp"
+						android:background="?attr/selectableItemBackground"
+						android:clickable="true"
+						android:focusable="true"
+						android:padding="4dp" />
+
+				</LinearLayout>
+
+				<!-- Color personalizado -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<EditText
+						android:id="@+id/etColorCode"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:hint="#AARRGGBB"
+						android:textSize="14sp"
+						android:inputType="text"
+						android:maxLines="1"
+						android:singleLine="true"
+						android:imeOptions="actionDone" />
+
+					<Button
+						android:id="@+id/btnApplyColor"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Aplicar"
+						android:textSize="12sp"
+						android:layout_marginStart="8dp"
+						style="@style/Widget.MaterialComponents.Button.TextButton" />
+				</LinearLayout>
+
+				<!-- Color predeterminado -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Color predeterminado:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewDefaultColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+						
+					<View
+						android:layout_width="0dp"
+						android:layout_height="1dp"
+						android:layout_weight="1" />
+
+					<TextView
+						android:id="@+id/btnUseDefault"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Usar predeterminado"
+						android:textColor="@color/primary_color"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:background="?attr/selectableItemBackground"
+						android:clickable="true"
+						android:focusable="true"
+						android:padding="4dp" />
+				</LinearLayout>
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+
+		<TextView
+			android:id="@+id/tvTextColorsLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="Colores de texto y flechas"
+			android:textColor="@color/text_primary"
+			android:textSize="16sp"
+			android:drawableStart="@drawable/ic_text_format"
+			android:drawablePadding="8dp"
+			android:drawableTint="@color/primary_color"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/cardWidgetColor" />
+
+		<com.google.android.material.card.MaterialCardView
+			android:id="@+id/cardTextColors"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			app:cardBackgroundColor="@color/card_background"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="0dp"
+			app:strokeColor="@color/divider_color"
+			app:strokeWidth="1dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/tvTextColorsLabel">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="12dp">
+
+				<!-- Color de descarga -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Color de descarga"
+					android:textColor="@color/text_primary"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Flecha:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewDownloadArrowColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+
+					<com.google.android.material.button.MaterialButton
+						android:id="@+id/btnChangeDownloadArrowColor"
+						style="@style/Widget.MaterialComponents.Button.TextButton"
+						android:layout_width="wrap_content"
+						android:layout_height="36dp"
+						android:layout_marginStart="8dp"
+						android:text="Cambiar"
+						android:textSize="12sp"
+						android:textColor="@color/primary_color"
+						app:rippleColor="@color/primary_color" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Texto:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewDownloadTextColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+
+					<com.google.android.material.button.MaterialButton
+						android:id="@+id/btnChangeDownloadTextColor"
+						style="@style/Widget.MaterialComponents.Button.TextButton"
+						android:layout_width="wrap_content"
+						android:layout_height="36dp"
+						android:layout_marginStart="8dp"
+						android:text="Cambiar"
+						android:textSize="12sp"
+						android:textColor="@color/primary_color"
+						app:rippleColor="@color/primary_color" />
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/divider_color"
+					android:layout_marginTop="12dp"
+					android:layout_marginBottom="12dp" />
+
+				<!-- Color de carga -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Color de carga"
+					android:textColor="@color/text_primary"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Flecha:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewUploadArrowColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+
+					<com.google.android.material.button.MaterialButton
+						android:id="@+id/btnChangeUploadArrowColor"
+						style="@style/Widget.MaterialComponents.Button.TextButton"
+						android:layout_width="wrap_content"
+						android:layout_height="36dp"
+						android:layout_marginStart="8dp"
+						android:text="Cambiar"
+						android:textSize="12sp"
+						android:textColor="@color/primary_color"
+						app:rippleColor="@color/primary_color" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Texto:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewUploadTextColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+
+					<com.google.android.material.button.MaterialButton
+						android:id="@+id/btnChangeUploadTextColor"
+						style="@style/Widget.MaterialComponents.Button.TextButton"
+						android:layout_width="wrap_content"
+						android:layout_height="36dp"
+						android:layout_marginStart="8dp"
+						android:text="Cambiar"
+						android:textSize="12sp"
+						android:textColor="@color/primary_color"
+						app:rippleColor="@color/primary_color" />
+				</LinearLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/divider_color"
+					android:layout_marginTop="12dp"
+					android:layout_marginBottom="12dp" />
+
+				<!-- Color del icono de red -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Color del icono de red"
+					android:textColor="@color/text_primary"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginTop="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Icono:"
+						android:textColor="@color/text_secondary"
+						android:textSize="14sp" />
+
+					<View
+						android:id="@+id/viewNetworkIconColor"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_marginStart="8dp"
+						android:background="@drawable/color_preview_background" />
+
+					<com.google.android.material.button.MaterialButton
+						android:id="@+id/btnChangeNetworkIconColor"
+						style="@style/Widget.MaterialComponents.Button.TextButton"
+						android:layout_width="wrap_content"
+						android:layout_height="36dp"
+						android:layout_marginStart="8dp"
+						android:text="Cambiar"
+						android:textSize="12sp"
+						android:textColor="@color/primary_color"
+						app:rippleColor="@color/primary_color" />
+						
+				</LinearLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/divider_color"
+					android:layout_marginTop="12dp"
+					android:layout_marginBottom="12dp" />
+
+				<!-- Botón para restablecer colores predeterminados -->
+				<com.google.android.material.button.MaterialButton
+					android:id="@+id/btnResetTextColors"
+					style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="12dp"
+					android:text="Restablecer colores predeterminados"
+					android:textSize="12sp"
+					app:icon="@drawable/ic_reset"
+					app:iconGravity="textStart"
+					app:iconPadding="2dp"
+					app:iconSize="20dp"
+					app:iconTint="@color/poor_connection"
+					app:cornerRadius="8dp"
+					app:strokeColor="@color/primary_color"
+					app:strokeWidth="1dp"
+					android:textColor="@color/primary_color" />
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+
+		<View
+			android:id="@+id/buttonDivider"
+			android:layout_width="0dp"
+			android:layout_height="1dp"
+			android:layout_marginTop="24dp"
+			android:background="@color/divider_color"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/cardTextColors" />
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReset"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/reset_settings"
+                android:textColor="@color/poor_connection"
+                android:textSize="12sp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_reset"
+                app:iconGravity="textStart"
+                app:iconPadding="2dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/poor_connection"
+                app:strokeColor="@color/poor_connection"
+                app:strokeWidth="1.5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/cancel"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_cancel"
+                app:iconGravity="textStart"
+                app:iconPadding="2dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/text_primary"
+                app:strokeColor="@color/divider_color"
+                app:strokeWidth="1.5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/primary_color"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_save"
+                app:iconGravity="textStart"
+                app:iconPadding="2dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/white" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
