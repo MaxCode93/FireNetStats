@@ -93,19 +93,6 @@
 
 ---
 
-## 📋 Requisitos
-
-- **Android:** 5.0 (API 21) o superior
-- **Permisos necesarios:**
-  - `android.permission.INTERNET` - Acceso a red
-  - `android.permission.ACCESS_NETWORK_STATE` - Estado de conexión
-  - `android.permission.ACCESS_WIFI_STATE` - Estado de WiFi
-  - `android.permission.SYSTEM_ALERT_WINDOW` - Widget flotante
-  - `android.permission.QUERY_ALL_PACKAGES` - Firewall (apps)
-  - `android.permission.PACKAGE_USAGE_STATS` - Estadísticas de uso
-
----
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **Lenguaje:** Kotlin 100%
