@@ -1,38 +1,140 @@
 # FireNetStats 🔥📊  
-**Monitor de Red en Tiempo Real para Android**  
+**Monitor de Red y Firewall en Tiempo Real para Android**  
 
+<div align="center">
+
+[![Android](https://img.shields.io/badge/Android-9.0+-brightgreen?logo=android)](https://www.android.com/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-100%25-blue?logo=kotlin)](https://kotlinlang.org/)
+[![Material Design](https://img.shields.io/badge/Material%20Design-3-purple)](https://m3.material.io/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+</div>
+
+---
 
 ## 📱 Descripción  
-FireNetStats es una aplicación Android moderna y elegante que te permite monitorear las estadísticas de tu red en tiempo real. Con un widget flotante personalizable y una interfaz intuitiva, mantente siempre informado sobre tu velocidad de descarga, carga y el estado de tu conexión.  
+**FireNetStats** es una aplicación Android profesional y elegante que combina monitoreo de red en tiempo real con un potente sistema de firewall personalizable. Con una interfaz moderna Material Design 3, widget flotante configurable y análisis detallado de conexiones, mantén el control total de tu red y datos.
 
 ---
 
 ## ✨ Características Principales  
 
-### 🎯 **Monitoreo en Tiempo Real**  
-- Velocidades de descarga y carga actualizadas cada segundo  
-- Información detallada de la red actual (WiFi/Datos móviles)  
-- Intensidad de señal y uso de datos  
-- Historial gráfico de velocidades  
+### 🎯 **Monitoreo de Red en Tiempo Real**  
+- ⚡ Velocidades de descarga y carga actualizadas en tiempo real
+- 📊 Historial gráfico interactivo de velocidades
+- 📡 Información detallada de conexiones (WiFi/Datos móviles)
+- 📶 Intensidad de señal y estado de la red
+- 🔍 Detalles avanzados
+- 📈 Estadísticas por segundo, minuto, hora y día
 
-### 🎨 **Widget Flotante Personalizable**  
-- **Tamaños:** Pequeño, Mediano, Grande  
-- **Transparencia:** Ajustable de 0% a 100%  
-- **Colores personalizados:** Fondo, texto y flechas  
-- **Información mostrada:** Solo descarga, solo carga, o ambas  
-- **Posición libre:** Arrastra el widget donde quieras  
+### 🎨 **Widget Flotante Avanzado**  
+- **Tamaños personalizables:** Pequeño, Mediano, Grande
+- **Transparencia ajustable:** 0% a 100%
+- **Colores customizados:** Fondo, texto, iconos y flechas
+- **Información flexible:** Solo ↓, solo ↑, o ambas velocidades
+- **Posición libre:** Arrastra libremente por la pantalla
+- **Actualizaciones suaves:** Sin lag ni congelamiento
 
-### 🎪 **Interfaz Moderna**  
-- Diseño Material Design 3  
-- Soporte para tema claro y oscuro  
-- Animaciones fluidas y transiciones suaves  
-- Gráficos interactivos con MPAndroidChart  
+### 🛡️ **Sistema de Firewall Inteligente** *(Nuevo)*
+- 🚫 Bloqueo de aplicaciones individuales
+- 🔐 Control granular de conexiones WiFi y datos móviles
+- 📊 Monitoreo de uso de datos por aplicación
+- 🔔 Notificaciones de intentos de conexión bloqueados
+- ⚙️ Perfiles de firewall preconfigurados
+- 🎯 Reglas personalizadas por aplicación
+- 📱 Vista detallada de permisos de red por app
+
+### 🎪 **Interfaz Moderna Material Design 3** *(Mejorada)*
+- 🌓 Soporte completo para tema claro y oscuro
+- ✨ Animaciones fluidas y transiciones elegantes
+- 📈 Gráficos interactivos con MPAndroidChart
+- 🎨 Paleta de colores dinámica y consistente
+- 📐 Diseño responsive en todos los dispositivos
+- 🔄 Actualizaciones UI sin cortes
 
 ### ⚙️ **Configuración Avanzada**  
-- Paleta de colores completa con vista previa  
-- Códigos de color personalizados (formato #AARRGGBB)  
-- Configuración granular de cada elemento visual  
-- Restablecimiento a valores predeterminados  
+- 🎨 Editor visual de colores con vista previa en tiempo real
+- 🔧 Códigos de color personalizados (formato #AARRGGBB)
+- 📋 Presets predefinidos de temas
+- ↩️ Restablecimiento a valores predeterminados
+- 💾 Guardado automático de preferencias
+- 🚀 Optimización de rendimiento ajustable
+
+---
+
+## 🎮 Cómo Usar
+
+### Monitoreo de Red
+1. Abre la app principal
+2. Visualiza estadísticas en tiempo real en la pestaña "Inicio"
+3. Accede al historial y análisis gráficos
+4. Consulta detalles de conexión actual
+
+### Widget Flotante
+1. Ve a **Ajustes Globales** → **Widget Flotante**
+2. Activa el widget con el toggle
+3. Personaliza tamaño, transparencia y colores
+4. Arrastra el widget a la posición deseada
+5. Toca el widget para ver detalles rápidos
+
+### Firewall
+1. Abre la pestaña **Firewall**
+2. Selecciona las apps a proteger
+3. Activa bloqueo de WiFi/Datos según necesites
+4. Monitorea intentos de conexión en tiempo real
+5. Revisa estadísticas de uso de datos por app
+
+### Configuración
+1. Ve a **Ajustes Globales**
+2. Personaliza colores y apariencia
+3. Configura permisos y notificaciones
+4. Ajusta intervalo de actualización
+5. Copia valores de configuración
+
+---
+
+## 📋 Requisitos
+
+- **Android:** 5.0 (API 21) o superior
+- **Permisos necesarios:**
+  - `android.permission.INTERNET` - Acceso a red
+  - `android.permission.ACCESS_NETWORK_STATE` - Estado de conexión
+  - `android.permission.ACCESS_WIFI_STATE` - Estado de WiFi
+  - `android.permission.SYSTEM_ALERT_WINDOW` - Widget flotante
+  - `android.permission.QUERY_ALL_PACKAGES` - Firewall (apps)
+  - `android.permission.PACKAGE_USAGE_STATS` - Estadísticas de uso
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Lenguaje:** Kotlin 100%
+- **Framework:** Android Framework, AndroidX
+- **UI:** Material Design 3, MaterialComponents
+- **Gráficos:** MPAndroidChart
+- **Monitoreo:** TrafficStats, ConnectivityManager
+- **Datos:** SharedPreferences, DataStore
+- **Arquitectura:** MVVM, Coroutines
+- **Build:** Gradle, ProGuard/R8
+
+---
+
+## 📦 Instalación
+
+### Desde APK
+1. Descarga el APK más reciente desde [Releases](../../releases)
+2. Habilita "Fuentes desconocidas" en tu dispositivo
+3. Instala el APK
+
+### Desde APKLis
+- [FireNetStats en ApkLis](https://www.apklis.cu/application/cu.maxwell.firenetstats)
+
+### Desde Código Fuente
+```bash
+clone https://github.com/MaxCode93/FireNetStats.git
+cd FireNetStats
+./gradlew assembleRelease
+```
 
 ---
 
@@ -44,105 +146,44 @@ FireNetStats es una aplicación Android moderna y elegante que te permite monito
 
 ---
 
-## 🚀 Instalación  
+## 🤝 Contribuir
 
-### **Desde GitHub Releases**  
-1. Ve a la sección [Releases](https://github.com/MaxCode93/FireNetStats/releases)  
-2. Descarga la última versión del APK  
-3. Instala en tu dispositivo Android  
+¡Las contribuciones son bienvenidas! Por favor:
 
-### **Compilar desde el código fuente**  
-```bash
-git clone https://github.com/MaxCode93/FireNetStats.git
-cd FireNetStats
-./gradlew assembleDebug
-```
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
 ---
 
-## 🔧 Requisitos del Sistema  
-- **Android:** 5.0 (API 21) o superior  
-- **Permisos necesarios:**  
-  - `SYSTEM_ALERT_WINDOW` - Para el widget flotante  
-  - `ACCESS_FINE_LOCATION` - Para nombres de redes WiFi  
-  - `READ_PHONE_STATE` - Para información de redes móviles  
+## 📞 Soporte
+
+- **WhatsApp:** [Contacta aquí](https://wa.me/+5355770892)
+- **GitHub Issues:** [Reporta bugs](../../issues)
+- **Email:** carlosmaxwell93@gmail.com
 
 ---
 
-## 🎮 Uso  
+## 📄 Licencia
 
-### **Activar el Widget Flotante**  
-1. Abre FireNetStats  
-2. Toca "Activar Widget Flotante"  
-3. Concede el permiso de superposición si es necesario  
-4. ¡El widget aparecerá en tu pantalla!  
-
-### **Personalizar el Widget**  
-1. Toca el ícono de configuración en la app principal  
-2. Ajusta tamaño, transparencia y colores  
-3. Usa la vista previa en tiempo real  
-4. Guarda los cambios  
-
-### **Interactuar con el Widget**  
-- **Arrastra** para mover el widget  
-- **Toca** para alternar entre modos de visualización  
-- **Mantén presionado** para acceder a opciones rápidas  
+Este proyecto está bajo la licencia MIT - Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
-## 🏗️ Arquitectura Técnica  
+## 👨‍💻 Autor
 
-### **Tecnologías Utilizadas**  
-- **Lenguaje:** Kotlin 100%  
-- **UI:** Material Design Components, View Binding  
-- **Gráficos:** MPAndroidChart  
-- **Arquitectura:** MVVM con LiveData  
-- **Servicios:** Foreground Service para monitoreo continuo  
-
-### **Estructura del Proyecto**  
-```
-app/
-├── src/main/java/cu/maxwell/firenetstats/
-│   ├── MainActivity.kt              # Actividad principal
-│   ├── WidgetSettingsActivity.kt    # Configuración del widget
-│   ├── FloatingWidgetService.kt     # Servicio del widget flotante
-│   ├── ColorAdapter.kt              # Adaptador para selector de colores
-│   └── utils/
-│       └── NetworkUtils.kt          # Utilidades de red
-├── src/main/res/
-│   ├── layout/                      # Layouts XML
-│   ├── drawable/                    # Recursos gráficos
-│   ├── values/                      # Colores, strings, estilos
-│   └── values-night/                # Tema oscuro
-└── build.gradle                     # Configuración de Gradle
-```
+**Carlos Almaguer Sosa(Maxwell)** - Desarrollador Principal
+- GitHub: [@MaxCode93](https://github.com/MaxCode93/)
+- WhatsApp: [+5355770892](https://wa.me/+5355770892)
 
 ---
 
-## 🤝 Contribuir  
-¡Las contribuciones son bienvenidas! Si quieres mejorar FireNetStats:  
+<div align="center">
 
-1. Haz **fork** del repositorio  
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)  
-3. Haz commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)  
-4. Haz push a la rama (`git push origin feature/AmazingFeature`)  
-5. Abre un **Pull Request**  
+**Hecho con ❤️ por Maxwell**
 
-### **Reportar Bugs**  
-Si encuentras un bug, por favor abre un **issue** con:  
-- Descripción detallada del problema  
-- Pasos para reproducir el bug  
-- Información del dispositivo (modelo, versión de Android)  
-- Screenshots si es posible  
+⭐ Si te gusta el proyecto, ¡por favor dale una estrella!
 
----
-
-## 👨‍💻 Autor  
-**Maxwell**  
-- [GitHub](https://github.com/MaxCode93)  
-- [Facebook](https://facebook.com/MaxCode93)  
-
-## 🙏 Agradecimientos  
-- **MPAndroidChart** por los gráficos  
-- **Material Design** por las guías de diseño  
-- Comunidad de Android por el feedback y sugerencias
+</div>
