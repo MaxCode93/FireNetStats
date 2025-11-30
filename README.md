@@ -129,7 +129,7 @@ cd FireNetStats
 
 | Vista Principal | Widget Flotante | Configuración |
 |----------------|----------------|----------------|
-| <img src="screenshots/main.png" width="200" /> | <img src="screenshots/widget.png" width="200" /> | <img src="screenshots/settings.png" width="200" /> |
+| <img src="screenshots/1.png" width="200" /> | <img src="screenshots/3.png" width="200" /> | <img src="screenshots/5.png" width="200" /> |
 
 ---
 
