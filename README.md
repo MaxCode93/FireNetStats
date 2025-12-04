@@ -1,4 +1,4 @@
-# FireNetStats 🔥📊  
+# <img src="ic_launcher_round.webp" width="32" /> FireNetStats 🔥📊  
 **Monitor de Red y Firewall en Tiempo Real para Android**  
 
 <div align="center">
