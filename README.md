@@ -12,14 +12,14 @@
 
 ---
 
-## 📸 Capturas de Pantalla  
-
-<img src="screenshots/1.png" width="200" /> <img src="screenshots/3.png" width="200" /> <img src="screenshots/5.png" width="200" />
+## 📱 Descripción  
+**FireNetStats** es una aplicación Android profesional y elegante que combina monitoreo de red en tiempo real con un potente sistema de firewall personalizable. Con una interfaz moderna Material Design 3, widget flotante configurable y análisis detallado de conexiones, mantén el control total de tu red y datos.
 
 ---
 
-## 📱 Descripción  
-**FireNetStats** es una aplicación Android profesional y elegante que combina monitoreo de red en tiempo real con un potente sistema de firewall personalizable. Con una interfaz moderna Material Design 3, widget flotante configurable y análisis detallado de conexiones, mantén el control total de tu red y datos.
+## 📸 Capturas de Pantalla  
+
+<img src="screenshots/1.png" width="200" /> <img src="screenshots/3.png" width="200" /> <img src="screenshots/5.png" width="200" />
 
 ---
 
