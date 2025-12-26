@@ -3,7 +3,7 @@
 
 <div align="center">
 
-[![Android](https://img.shields.io/badge/Android-9.0+-brightgreen?logo=android)](https://www.android.com/)
+[![Android](https://img.shields.io/badge/Android-7.0+-brightgreen?logo=android)](https://www.android.com/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-100%25-blue?logo=kotlin)](https://kotlinlang.org/)
 [![Material Design](https://img.shields.io/badge/Material%20Design-3-purple)](https://m3.material.io/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
